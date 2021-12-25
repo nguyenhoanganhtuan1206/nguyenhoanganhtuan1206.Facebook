@@ -1,0 +1,88 @@
+:root {
+    --primary-hover: #3A3B3C;
+    --border-color: #393A3B;
+    --white-color: #fff;
+    --content-color: #242526;
+    --font-color: #A7B3B8;
+}
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    line-height: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Function icon */
+.like-icon {
+    background-color: #15a8fc !important;
+    color: var(--white-color);
+}
+
+.heart-icon {
+    background-color: #fd607a !important;
+    color: var(--white-color);
+}
+
+.smile-icon,
+.surprise-icon,
+.sad-icon {
+    color: #fee96f;
+}
+
+.angry-icon {
+    color: #e65706;
+}
+
+/* Animation */
+@keyframes scaleFadeIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Limit line height */
+.limit-height-text-comment {
+    --line-height: 2.8rem;
+    font-size: 1.4rem;
+    line-height: var(--line-height-text);
+    max-height: calc(var(--line-height) * 2);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+/* Customize Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--primary-hover);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-hover);
+}
