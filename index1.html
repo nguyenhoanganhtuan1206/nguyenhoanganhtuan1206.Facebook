@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .modal {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+            z-index: 11;
+        }
+
+        .modal-img {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.4);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .open-modal-img {
+            display: flex;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="/assets/img/body-center/avatar-story-2.jpg" alt="" class="js-img">
+
+    <div class="modal"></div>
+    <div class="modal-img js-modal-img">
+        <div class="modal-img-container js-img-container">
+            <img class="modal-img-content">
+        </div>
+    </div>
+
+    <script src="/js/click-image.js"></script>
+</body>
+
+</html>

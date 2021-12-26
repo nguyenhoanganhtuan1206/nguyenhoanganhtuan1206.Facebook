@@ -91,24 +91,26 @@
                     <div class="header__user-top-name">Tuấn</div>
                 </a>
 
-                <a href="" class="header__menu-top-right">
-                    <i class="header__menu-top-right-icon fas fa-list-ul"></i>
-                </a>
+                <div class="header__info-wrapper-body">
+                    <a href="" class="header__menu-top-right">
+                        <i class="header__menu-top-right-icon fas fa-list-ul"></i>
+                    </a>
 
-                <a href="" class="header__message-top">
-                    <i class="header__message-top-icon fab fa-facebook-messenger"></i>
+                    <a href="" class="header__message-top">
+                        <i class="header__message-top-icon fab fa-facebook-messenger"></i>
 
-                    <span class="header__has--notify header__has--notify-top-right">3</span>
-                </a>
+                        <span class="header__has--notify header__has--notify-top-right">3</span>
+                    </a>
 
-                <a href="" class="header__notify-top">
-                    <i class="header__notify-top-icon fas fa-bell"></i>
-                    <span class="header__has--notify header__has--notify-top-right">9+</span>
-                </a>
+                    <a href="" class="header__notify-top">
+                        <i class="header__notify-top-icon fas fa-bell"></i>
+                        <span class="header__has--notify header__has--notify-top-right">9+</span>
+                    </a>
 
-                <a href="" class="header__show-more-top">
-                    <i class="header__show-more-top-icon fas fa-caret-down"></i>
-                </a>
+                    <a href="" class="header__show-more-top">
+                        <i class="header__show-more-top-icon fas fa-caret-down"></i>
+                    </a>
+                </div>
             </div>
         </header>
 
@@ -120,7 +122,8 @@
                             <ul class="nav__left-list">
                                 <li class="nav__left-list-item">
                                     <a href="" class="nav__left-list-item-link">
-                                        <img src="./assets/img/header/avatar.jpg" alt="" class="nav__left-list-item-img">
+                                        <img src="./assets/img/header/avatar.jpg" alt=""
+                                            class="nav__left-list-item-img">
                                         <div class="nav__left-list-item-name">Nguyễn Tuấn</div>
                                     </a>
                                 </li>
@@ -252,7 +255,7 @@
                             <div class="story-center">
                                 <ul class="story-center__list">
                                     <li class="story-center__item">
-                                        <a href="" class="story-center__item-link">
+                                        <a href="javascript:void(0)" class="story-center__item-link">
                                             <img src="./assets/img/header/avatar.jpg" alt=""
                                                 class="story-center__item-img">
 
@@ -267,9 +270,9 @@
                                     </li>
 
                                     <li class="story-center__item">
-                                        <a href="" class="story-center__item-link">
+                                        <a href="javascript:void(0)" class="story-center__item-link js-click">
                                             <img src="./assets/img/body-center/avatar-story-1.jpg" alt=""
-                                                class="story-center__item-img-friends">
+                                                class="story-center__item-img-friends js-img">
 
                                             <div class="story-center__item-avatar-container">
                                                 <img src="./assets/img/body-center/story-1.jpg" alt=""
@@ -280,9 +283,9 @@
                                     </li>
 
                                     <li class="story-center__item">
-                                        <a href="" class="story-center__item-link">
+                                        <a href="javascript:void(0)" class="story-center__item-link">
                                             <img src="./assets/img/body-center/story-2.jpg" alt=""
-                                                class="story-center__item-img-friends">
+                                                class="story-center__item-img-friends js-img">
 
                                             <div class="story-center__item-avatar-container">
                                                 <img src="./assets/img/body-center/avatar-story-2.jpg" alt=""
@@ -293,9 +296,9 @@
                                     </li>
 
                                     <li class="story-center__item">
-                                        <a href="" class="story-center__item-link">
+                                        <a href="javascript:void(0)" class="story-center__item-link">
                                             <img src="./assets/img/body-center/avatar-story-3.jpg" alt=""
-                                                class="story-center__item-img-friends">
+                                                class="story-center__item-img-friends js-img">
 
                                             <div class="story-center__item-avatar-container">
                                                 <img src="./assets/img/body-center/story-3.jpg" alt=""
@@ -306,9 +309,9 @@
                                     </li>
 
                                     <li class="story-center__item">
-                                        <a href="" class="story-center__item-link">
+                                        <a href="javascript:void(0)" class="story-center__item-link">
                                             <img src="./assets/img/body-center/avatar-story-4.jpg" alt=""
-                                                class="story-center__item-img-friends">
+                                                class="story-center__item-img-friends js-img">
 
                                             <div class="story-center__item-avatar-container">
                                                 <img src="./assets/img/body-center/story-4.jpg" alt=""
@@ -2196,8 +2199,56 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Modal when click story -->
+    <div class="modal"></div>
+
+    <div class="modal-img js-modal-img">
+        <div class="modal-img-container js-img-container">
+            <div class="row">
+                <div class="col l-2">
+                </div>
+                <div class="col l-5">
+                    <ul class="modal-img__list">
+                        <li class="modal-img__item">
+                            <div class="modal-img-container">
+                                <div class="modal-img__header">
+                                    <div class="modal-img__header-left">
+                                        <img src="./assets/img/body-center/story-1.jpg" alt=""
+                                            class="story-center__item-avatar">
+                                        <div class="modal-img__header-left-body">
+                                            <div class="modal-img__header-left-body-top">
+                                                <div class="modal-img__header-name">Thủy Dương</div>
+                                                <span class="modal-img__header-left-time">10 giờ</span>
+                                            </div>
+
+                                            <div class="modal-img__header-left-body-bottom">
+                                                <div class="modal-img__header-sound">BEAST</div>
+                                                <i class="ti-angle-right"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="modal-img__header-right">
+                                        <i class="modal-img__header-right-icon fas fa-play"></i>
+                                        <i class="modal-img__header-right-icon fas fa-volume-up"></i>
+                                        <i class="modal-img__header-right-icon fas fa-ellipsis-h"></i>
+                                    </div>
+                                </div>
+                                <img alt="" class="modal-img-content">
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col l-5"></div>
+            </div>
+        </div>
     </div>
-    </div>
+    <!-- Modal when click end -->
+
+    <script src="/js/click-image.js"></script>
 </body>
 
 </html>

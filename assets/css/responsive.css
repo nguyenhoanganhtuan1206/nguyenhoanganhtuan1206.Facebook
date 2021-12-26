@@ -67,6 +67,10 @@
     font-size: 1.6rem;
   }
 
+  .header__info-wrapper-body {
+    width: 50%;
+  }
+
   .header__menu-top-right,
   .header__message-top,
   .header__notify-top,

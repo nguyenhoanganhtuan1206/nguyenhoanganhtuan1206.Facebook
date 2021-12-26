@@ -99,10 +99,15 @@
     color: #ccc;
 }
 
-.header__info-wrapper {
+.header__info-wrapper, 
+.header__info-wrapper-body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header__info-wrapper-body {
+    height: 100%;
 }
 
 .header__user-top {
@@ -139,7 +144,7 @@
 .header__menu-top-right,
 .header__message-top,
 .header__notify-top,
-.header__show-more-top ,
+.header__show-more-top,
 .search-top-mobile-tablet {
     font-size: 2rem;
     color: var(--white-color);
@@ -156,6 +161,7 @@
     border-radius: 50%;
     margin-right: 10px;
     position: relative;
+    width: 44px;
 }
 
 .header__menu-top-right:hover,
@@ -1043,7 +1049,7 @@
     margin: 0;
 }
 
-.nav__left-list-footer-item, 
+.nav__left-list-footer-item,
 .nav__left-list-footer-item-link {
     list-style: none;
     height: 52px;
@@ -1085,4 +1091,106 @@
 
 .search-top-mobile-tablet {
     display: none;
+}
+
+/* Click image story */
+.modal-img {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    display: none;
+    z-index: 11;
+}
+
+.open-modal-img {
+    display: block;
+}
+
+img.modal-img-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.modal-img__header-left > .story-center__item-avatar {
+    border: none;
+}
+
+/* Modal header story */
+.modal-img__list {
+    padding-left: 0;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 74px 0 0 0;
+    height: 85vh;
+    width: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-img__item {
+    list-style: none;
+    height: 100%;
+}
+
+.modal-img__header-left {
+    display: flex;
+    align-items: center;
+}
+
+.modal-img__header {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: var(--white-color);
+    top: 12px;
+}
+
+.modal-img-container {
+    height: 100%;
+    width: 100%;
+}
+
+.modal-img__header-left-body div {
+    display: flex;
+    align-items: center;
+}
+
+.modal-img__header-left-body {
+    margin-left: 12px;
+}
+
+.modal-img__header-name {
+    font-size: 1.4rem;
+    font-weight: 450;
+    margin-right: 6px;
+}
+
+.modal-img__header-left-time {
+    font-size: 1.2rem;
+}
+
+.modal-img__header-left-body-bottom {
+    font-size: 1.2rem;
+    margin-top: 4px;
+}
+
+.modal-img__header-right-icon {
+    margin-right: 12px;
+    font-size: 1.8rem;
+}
+
+.modal-img__item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
